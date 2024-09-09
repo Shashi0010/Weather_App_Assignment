@@ -1,0 +1,61 @@
+/* General container styling */
+.weather-div-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.weather-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Backgrounds for different weather conditions */
+  .sunny-bg {
+    background: linear-gradient(to right, #fbcf61, #f7a51b);
+  }
+  
+  .cloudy-bg {
+    background: linear-gradient(to right, #cfd9df, #e2ebf0);
+  }
+  
+  .rainy-bg {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+  }
+  
+  .default-bg {
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+    color: black;
+  }
+  
+  /* Loading and error styling */
+  .loading {
+    font-size: 24px;
+    color: #888;
+  }
+  
+  .error {
+    font-size: 24px;
+    color: red;
+  }
+  
+  /* Responsive design */
+  @media only screen and (max-width: 768px) {
+    .weather-container {
+      width: 100%;
+      padding: 15px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .weather-container {
+      padding: 10px;
+    }
+  }
+  

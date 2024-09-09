@@ -1,0 +1,97 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  input[type="text"] {
+    width: 90%;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Table Styles */
+  table {
+    width: 90%;
+    margin: 20px;
+    align-items: center;
+    border-collapse: collapse;
+  }
+  
+  thead {
+    background-color: #f4f4f4;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  th {
+    cursor: pointer;
+    background-color: #e9ecef;
+  }
+  
+  th:hover {
+    background-color: #d6d6d6;
+  }
+  
+  /* Row Styles */
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  td {
+    white-space: nowrap;
+  }
+  
+  /* Infinite Scroll Styles */
+  .loading, .endMessage {
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+  }
+  
+  .error {
+    color: red;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Dynamic Backgrounds */
+  .sunny-bg {
+    background: linear-gradient(to bottom, #87ceeb, #ffffff);
+  }
+  
+  .cloudy-bg {
+    background: linear-gradient(to bottom, #d3d3d3, #ffffff);
+  }
+  
+  .rainy-bg {
+    background: linear-gradient(to bottom, #a0a0a0, #ffffff);
+  }
+  
+  .default-bg {
+    background: linear-gradient(to bottom, #f0f0f0, #ffffff);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    th, td {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+  

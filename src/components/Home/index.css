@@ -1,0 +1,90 @@
+/* General styles for the Home component */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Styling the Search Bar */
+  .search-bar {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .search-bar input:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Styling the Cities Table */
+  .cities-table {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    border-collapse: collapse;
+  }
+  
+  .cities-table th, .cities-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+  }
+  
+  .cities-table th {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .cities-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .cities-table tr:hover {
+    background-color: #ddd;
+  }
+  
+  .cities-table td {
+    font-size: 14px;
+  }
+  
+  /* Loading and end message */
+  .loading-message, .end-message {
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+    padding: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .cities-table th, .cities-table td {
+      padding: 8px;
+      font-size: 12px;
+    }
+  
+    .search-bar input {
+      font-size: 14px;
+    }
+  }
+  
