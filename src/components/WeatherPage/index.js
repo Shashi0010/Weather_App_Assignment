@@ -48,7 +48,6 @@ const WeatherPage = () => {
         break;
     }
   };
-
   if (error) {
     return <div className="error">{error}</div>;
   }
